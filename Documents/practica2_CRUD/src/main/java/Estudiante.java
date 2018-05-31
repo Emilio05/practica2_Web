@@ -1,6 +1,6 @@
+import java.io.Serializable;
 
-
-public class Estudiante {
+public class Estudiante implements Serializable {
 
     private int matricula;
     private String nombre;
@@ -49,5 +49,7 @@ public class Estudiante {
         this.telefono = telefono;
     }
 
-
+    public String getStringMatricula() {
+        return "" + this.matricula;
+    }
 }
